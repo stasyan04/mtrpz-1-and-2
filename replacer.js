@@ -70,7 +70,6 @@ const findTags = (text) => {
     listTags.sort((a, b) => a[0] - b[0])
 
     let expected = null
-    console.log(listTags)
 
     for (const tag of listTags) {
         if (expected && tag[1] !== expected) {
