@@ -11,7 +11,7 @@ program
 
 
 const path = program.args[0]
-const output = program.output
+const output = program.opts().output
 
 const text = await readFile(path, "utf-8")
 const newText = replacer(text)
