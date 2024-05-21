@@ -5,14 +5,12 @@ import replacer from "./replacer.js"
 const program = new Command()
 
 program
-    .version("1.0.0")
-    .description("Replaces markdown tags with html tags")
-    .usage("<path> [options]")
-
-program
     .argument("<path>", "Path to file to read")
     .option("-o, --output <path>", "Path to file to write")
     .parse(process.argv)
+    .version("1.0.0")
+    .description("Replaces markdown tags with html tags")
+    .usage("<path> [options]")
 
 
 const path = program.args[0]
