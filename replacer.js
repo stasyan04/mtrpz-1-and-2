@@ -93,5 +93,9 @@ const findTags = (text) => {
         text = text.replace(new RegExp(tag[1]), openingTags[tag[1]])
     }
 
+    if (expected) {
+        throw new Error(`Expected ${expected} but found end of text`)
+    }
+
     return text
 }
