@@ -5,7 +5,7 @@ This is simple markdown to html converter
 1. Clone repo `git clone https://github.com/stasyan04/mtrpz-1-and-2.git`
 2. Cd into `cd mtrpz-1-and-2`
 3. Move to the second branch `git checkout lab-2`
-4. Install commander `npm i`
+4. Install commander and jest `npm i`
 
 # How to use
 `node main.js --output <output file, optional> --format=<escape or html, optional, default html> <input file, required>`
