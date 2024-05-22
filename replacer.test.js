@@ -19,8 +19,3 @@ test('nested tag', () => {
     const md = '_tag **inside** tag_'
     expect(() => convert(md, 'escape')).toThrow()
 })
-
-test('faulty test', () => {
-    const md = 'some text'
-    expect(() => convert(md, 'html')).toBe('other text')
-})
